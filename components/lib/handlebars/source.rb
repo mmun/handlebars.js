@@ -7,5 +7,9 @@ module Handlebars
     def self.runtime_bundled_path
       File.expand_path("../../../handlebars.runtime.js", __FILE__)
     end
+
+    def self.parser_bundled_path
+      File.expand_path("../../../handlebars.parser.js", __FILE__)
+    end
   end
 end

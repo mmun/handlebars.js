@@ -90,6 +90,12 @@ module.exports = function(grunt) {
           name: "handlebars.runtime",
           out: "dist/handlebars.runtime.amd.js"
         }
+      },
+      parser: {
+        options: {
+          name: "handlebars.parser",
+          out: "dist/handlebars.parser.amd.js"
+        }
       }
     },
 

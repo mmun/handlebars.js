@@ -73,7 +73,16 @@ module.exports = function(grunt) {
   }
   function fileMap(suffixes) {
     var map = {};
-    _.each(['handlebars.js', 'handlebars.min.js', 'handlebars.runtime.js', 'handlebars.runtime.min.js'], function(file) {
+    var files = [
+      'handlebars.js',
+      'handlebars.min.js',
+      'handlebars.runtime.js',
+      'handlebars.runtime.min.js',
+      'handlebars.parser.js',
+      'handlebars.parser.min.js'
+    ];
+
+    _.each(files, function(file) {
       _.each(suffixes, function(suffix) {
         map[file.replace(/\.js$/, suffix + '.js')] = 'dist/' + file;
       });

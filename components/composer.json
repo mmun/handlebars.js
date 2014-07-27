@@ -25,7 +25,8 @@
                 "handlebars.js"
             ],
             "files": [
-                "handlebars.runtime.js"
+                "handlebars.runtime.js",
+                "handlebars.parser.js"
             ],
             "shim": {
                 "exports": "Handlebars"
